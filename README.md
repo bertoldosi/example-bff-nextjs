@@ -1,6 +1,6 @@
 # Search music
 
-> Aplicação em React, utilizando [Next.js](https://nextjs.org/) para server-side render e rotas do SPA e [express](http://expressjs.com/) para a parte de sessão.
+> Aplicação em React, utilizando [Next.js](https://nextjs.org/) para single page application e [express](http://expressjs.com/) para a parte de sessão.
 
 Tecnologias usadas no projeto:
 
@@ -69,7 +69,7 @@ http://localhost:3000
 ├── public # Pasta que será exposta após build, para arquivos que serão exportáveis
 ├── server # Configuração do Server Side Rendering com Next.js e Express
 │   ├── routes	# Rotas de api externa
-│	└── utils	# Utilitários do servidor
+│	  └── utils	# Utilitários do servidor
 │       └── axios-instances-external # Responsável por criar a instancia que fará as requests externas
 └── next.config.js	# Arquivo de configurações do Next.js
 ```
