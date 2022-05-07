@@ -1,12 +1,13 @@
+require("dotenv").config();
 const axios = require("axios");
 
-const api_key = process.env.REACT_APP_LAST_FM_API_KEY;
-const base_url = process.env.BASE_URL;
+const BASE_URL = process.env.BASE_URL;
+const API_KEY = process.env.LAST_FM_API_KEY;
 
 const api = axios.create({
-  baseURL: base_url,
+  baseURL: BASE_URL,
   params: {
-    api_key,
+    api_key: API_KEY,
   },
 });
 

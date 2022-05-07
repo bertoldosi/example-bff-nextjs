@@ -7,9 +7,10 @@ router.get("/artist", async (req, res) => {
   const { artista } = req.query;
 
   try {
-    const response = await api.get("/?method=artist.search", {
+    const response = await api.get("/", {
       params: {
         artist: artista,
+        method: "artist.search",
         format: "json",
       },
     });
@@ -23,9 +24,10 @@ router.get("/artist", async (req, res) => {
 router.get("/album", async (req, res) => {
   const { album } = req.query;
 
-  const response = await api.get("/?method=album.search", {
+  const response = await api.get("/", {
     params: {
       album: album,
+      method: "album.search",
       format: "json",
     },
   });
